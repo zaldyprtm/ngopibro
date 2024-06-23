@@ -36,7 +36,7 @@ const Checkout: React.FC<CheckoutProps> = ({ cartItems }) => {
 
     const createOrder = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/checkout', {
+        const response = await fetch('https://ngopibro.vercel.app/api/checkout', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ cartItems }),
@@ -47,15 +47,15 @@ const Checkout: React.FC<CheckoutProps> = ({ cartItems }) => {
         await loadSnapScript(); // Ensure Snap.js script is loaded
 
         window.snap.pay(data.token, {
-          onSuccess: function(result) {
+          onSuccess: function(result: any) {
             console.log('success:', result);
             window.location.href = '/';
           },
-          onPending: function(result) {
+          onPending: function(result :any) {
             console.log('pending:', result);
             window.location.href = '/';
           },
-          onError: function(result) {
+          onError: function(result: any) {
             console.log('error:', result);
             window.location.href = '/';
           },

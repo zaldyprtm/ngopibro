@@ -11,14 +11,17 @@ interface Menuitem {
   price: number;
 }
 
-const Menu = ({handleAddToCart}) => {
+interface MenuProps {
+  handleAddToCart: (menu: Menuitem) => void;
+}
+
+const Menu: React.FC<MenuProps> = ({ handleAddToCart }) => {
   const [menus, setMenus] = useState<Menuitem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [cart, setCart] = useState<Menuitem[]>([]); // State untuk menyimpan cart
 
   useEffect(() => {
     axios
-      .get<Menuitem[]>("http://localhost:3000/api/menu")
+      .get<Menuitem[]>("https://ngopibro.vercel.app/api/menu")
       .then((response) => {
         setMenus(response.data);
         setLoading(false); // Setelah data diterima, loading dihentikan
@@ -28,8 +31,6 @@ const Menu = ({handleAddToCart}) => {
         setLoading(false); // Jika terjadi error, juga hentikan loading
       });
   }, []); // Kosongkan dependency array agar hanya dijalankan sekali saat komponen dimuat
-
-
 
   if (loading) {
     return <MenuSkeleton />;
@@ -50,9 +51,9 @@ const Menu = ({handleAddToCart}) => {
               <h2 className="card-title">{menu.name}</h2>
               <p>IDR {menu.price}</p>
               <div className="card-actions">
-                <button className="btn btn-primary"
-                  onClick={() => handleAddToCart(menu)} // 
-                >Add to Cart</button>
+                <button className="btn btn-primary" onClick={() => handleAddToCart(menu)}>
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>
