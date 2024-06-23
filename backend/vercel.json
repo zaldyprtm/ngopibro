@@ -15,7 +15,7 @@
   
   
     "env": {
-      "MONGODB_URI": "mongodb+srv://zaldyprtm:Rosenbloom31@clustersatu.ae3sqhx.mongodb.net/myDb"
+      "MONGODB_URI": "mongodb+srv://vercel-admin-user:Rosenbloom31@cluster0.rlepvxn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     }
   }
   
