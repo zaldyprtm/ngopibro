@@ -1,0 +1,22 @@
+
+
+h1.underline-animation {
+  position: relative;
+  /* display: inline-block; */
+}
+
+h1.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 2%; /* Center the underline vertically */
+  left: 50%; /* Start from the middle horizontally */
+  transform: translate(-50%, 50%); /* Center the underline */
+  background-color: currentColor;
+  transition: width 0.5s ease-in-out;
+}
+
+h1.underline-animation:hover::after {
+  width: 20%; /* Change width on hover */
+}

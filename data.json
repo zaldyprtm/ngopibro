@@ -1,0 +1,83 @@
+
+[
+    {
+        "id": 1,
+        "name": "Black Coffee",
+        "price": 12000,
+        "image": "/menu/black-coffee.jpg",
+        "category": "coffee",
+        "description": "Black Coffee"
+    },
+    {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 15000,
+        "image": "/menu/cappucino.jpg",
+        "category": "coffee",
+        "description": "Cappuccino"
+    },
+    {
+        "id": 3,
+        "name": "Hot Latte Coffee",
+        "price": 18000,
+        "image": "/menu/hot-latte-coffee.jpg",
+        "category": "coffee",
+        "description": "Hot Latte Coffee"
+    },
+    {
+        "id": 4,
+        "name": "Espresso",
+        "price": 10000,
+        "image": "/menu/espresso.jpg",
+        "category": "coffee",
+        "description": "Espresso"
+    },
+    {
+        "id": 5,
+        "name": "Iced Coffee Milk",
+        "price": 15000,
+        "image": "/menu/iced-coffeemilk.jpg",
+        "category": "coffee",
+        "description": "Iced Coffee Milk"
+    },
+    {
+        "id": 6,
+        "name": "Iced Latte",
+        "price": 20000,
+        "image": "/menu/iced-latte.jpg",
+        "category": "coffee",
+        "description": "Iced Latte"
+    },
+    {
+        "id": 7,
+        "name": "Frappuccino",
+        "price": 25000,
+        "image": "/menu/frappe.jpg",
+        "category": "coffee",
+        "description": "Frappuccino"
+    },
+    {
+        "id": 8,
+        "name": "Milk Shake",
+        "price": 20000,
+        "image": "/menu/milk-shake.jpg",
+        "category": "Milk",
+        "description": "Milk Shake"
+    },
+    {
+        "id": 9,
+        "name": "Latte Macchiato",
+        "price": 25000,
+        "image": "/menu/latte-macchiato.jpg",
+        "category": "Coffee",
+        "description": "Latte Macchiato"
+    },
+    {
+        "id": 10,
+        "name": "Coffee With Cookies",
+        "price": 30000,
+        "image": "/menu/coffee-cup-with-marshmallows-cookies.jpg",
+        "category": "Coffee",
+        "description": "Coffee With Cookies"
+    }
+]

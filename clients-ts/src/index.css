@@ -1,0 +1,24 @@
+/* Add this to your src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.underline-animation {
+  position: relative;
+  /* display: inline-block; */
+}
+
+a.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.5s ease-in-out;
+}
+
+a.underline-animation:hover::after {
+  width: 100%;
+}
